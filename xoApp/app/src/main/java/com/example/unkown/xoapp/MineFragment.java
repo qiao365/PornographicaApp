@@ -16,6 +16,7 @@ public class MineFragment extends Fragment {
     private View rootView;
     private TextView acountText;
     private TextView acountYueText;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {

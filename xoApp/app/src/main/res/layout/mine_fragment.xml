@@ -36,16 +36,18 @@
          android:textColor="@color/white"
          android:textSize="64sp"/>
  </LinearLayout>
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_marginTop="8dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="344dp"
+        android:layout_width="match_parent"
         android:layout_height="168dp"
-        android:background="@color/white">
+        android:background="@color/white"
+        >
         <RelativeLayout
             android:id="@+id/id_leftBack_mine"
-            android:layout_marginLeft="0dp"
-            android:layout_width="168dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight ="1"
+            android:layout_width="0dp"
             android:layout_height="168dp"
             android:background="@color/yellow">
             <ImageView
@@ -56,7 +58,8 @@
                 android:layout_gravity="center_horizontal"/>
             <TextView
                 android:layout_marginTop="105dp"
-                android:layout_width="65dp"
+                android:layout_width="wrap_content"
+                android:minWidth="65dp"
                 android:layout_height="22dp"
                 android:textSize="14dp"
                 android:text="账户充值"
@@ -66,9 +69,12 @@
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/id_rightBack_mine"
-            android:layout_alignParentRight="true"
-            android:layout_width="168dp"
+            android:layout_toRightOf="@+id/id_leftBack_mine"
+            android:layout_marginLeft="8dp"
             android:layout_height="168dp"
+            android:layout_weight ="1"
+            android:layout_width="0dp"
+            android:layout_marginRight="8dp"
             android:background="@color/fen">
             <ImageView
                 android:id="@+id/id_mine_buy"
@@ -86,5 +92,5 @@
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"/>
         </RelativeLayout>
-      </RelativeLayout>
+      </LinearLayout>
 </LinearLayout>
