@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="168dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+   <ImageView
+       android:id="@+id/id_item_header"
+       android:layout_width="168dp"
+       android:layout_height="168dp" />
+    <TextView
+        android:id="@+id/id_item_text"
+        android:layout_width="168dp"
+        android:layout_height="48dp"
+        android:gravity="left"
+        android:background="@color/white"
+        android:textSize="14sp"/>
+    <RelativeLayout
+        android:layout_width="168dp"
+        android:layout_height="33dp"
+        android:background="@color/white"
+        >
+        <Button
+            android:id="@+id/id_item_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点赞"
+            />
+        <TextView
+            android:id="@+id/id_item_price"
+            android:layout_width="80dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textColor="@color/colorPrimary"/>
+    </RelativeLayout>
+</LinearLayout>
