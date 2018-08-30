@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+ <RelativeLayout
+     android:layout_marginLeft="8dp"
+     android:layout_marginRight="8dp"
+     android:layout_marginTop="4dp"
+     android:layout_marginBottom="4dp"
+     android:layout_width="match_parent"
+     android:layout_height="140dp"
+     android:background="@color/white">
+     <ImageView
+         android:id="@+id/id_order_header"
+         android:layout_marginLeft="0dp"
+         android:layout_marginBottom="0dp"
+         android:layout_width="140dp"
+         android:layout_height="140dp"/>
+
+     <TextView
+         android:id="@+id/id_order_username"
+         android:layout_width="80dp"
+         android:layout_height="24dp"
+         android:layout_alignLeft="@+id/id_order_address"
+         android:layout_alignParentTop="true"
+         android:layout_alignStart="@+id/id_order_address"
+         android:layout_marginTop="16dp"
+         android:textColor="@color/black"
+         android:textSize="16dp" />
+     <TextView
+         android:id="@+id/id_order_address"
+         android:layout_toRightOf="@+id/id_order_header"
+         android:layout_below="@+id/id_order_username"
+         android:layout_marginTop="16dp"
+         android:layout_marginLeft="16dp"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:textColor="@color/black"
+         android:textSize="12dp"/>
+     <TextView
+         android:id="@+id/id_order_price"
+         android:layout_below="@+id/id_order_address"
+         android:layout_toRightOf="@+id/id_order_header"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="16dp"
+         android:layout_width="wrap_content"
+         android:textSize="12sp"
+         android:textColor="#B00020"
+         android:layout_height="20dp" />
+     <TextView
+         android:id="@+id/id_order_telephone"
+         android:layout_below="@+id/id_order_price"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:layout_marginTop="4dp"
+         android:layout_toRightOf="@+id/id_order_header"
+         android:layout_marginLeft="16dp"
+         android:textColor="#000000"
+         android:textSize="12sp"
+         />
+ </RelativeLayout>
+
+</LinearLayout>
