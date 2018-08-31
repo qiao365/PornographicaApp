@@ -9,11 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import views.MyOrderListAdapter;
-
 /**
  * Created by duhongxing on 2018/8/30.
  */
-
 public class MyOrderListFragment extends Fragment {
   private View rootView;
   private ListView orderListView;

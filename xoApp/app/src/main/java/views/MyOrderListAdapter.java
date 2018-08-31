@@ -43,9 +43,16 @@ public class MyOrderListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        OrderItemCell cell;
         if (convertView == null){
             convertView = inflater.inflate(R.layout.order_item,null);
+            cell = new OrderItemCell();
+            cell.setupViews(convertView);
+            convertView.setTag(cell);
+        }else {
+            cell = (OrderItemCell)convertView.getTag();
         }
+        cell.configOrderItem(null);
         return convertView;
     }
 }
