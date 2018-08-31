@@ -101,7 +101,7 @@ public class LoginFragment extends Fragment {
 //            return;
 //        }
         final LoginRequest request = (LoginRequest)RequestUtil.addRequest(LoginRequest.class);
-        Call<JsonObject> call = request.getLoginCall("password","uu","65e21","9865");
+        Call<JsonObject> call = request.getCallLogin("password","uu","65e21","9865");
         call.enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
