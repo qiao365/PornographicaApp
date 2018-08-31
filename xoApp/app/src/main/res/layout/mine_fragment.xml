@@ -59,13 +59,12 @@
             <TextView
                 android:layout_marginTop="105dp"
                 android:layout_width="wrap_content"
-                android:minWidth="65dp"
                 android:layout_height="22dp"
                 android:textSize="14dp"
                 android:text="账户充值"
-                android:gravity="center"
+                android:layout_centerHorizontal="true"                android:gravity="center"
                 android:textColor="@color/white"
-                android:layout_gravity="center_horizontal"/>
+                />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/id_rightBack_mine"
@@ -84,13 +83,14 @@
                 android:layout_gravity="center_horizontal"/>
             <TextView
                 android:layout_marginTop="105dp"
-                android:layout_width="65dp"
+                android:layout_width="wrap_content"
                 android:layout_height="22dp"
                 android:textSize="14dp"
                 android:text="已购买信息"
+                android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:textColor="@color/white"
-                android:layout_gravity="center_horizontal"/>
+                />
         </RelativeLayout>
       </LinearLayout>
 </LinearLayout>
