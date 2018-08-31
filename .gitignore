@@ -14,7 +14,7 @@ gen/
 out/
 
 # Gradle files
-.gradle/
+xoApp/.gradle/
 build/
 
 # Local configuration file (sdk path, etc)
@@ -34,13 +34,13 @@ captures/
 
 # IntelliJ
 *.iml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/gradle.xml
-.idea/assetWizardSettings.xml
-.idea/dictionaries
-.idea/libraries
-.idea/caches
+xoApp/.idea/workspace.xml
+xoApp/.idea/tasks.xml
+xoApp/.idea/gradle.xml
+xoApp/.idea/assetWizardSettings.xml
+xoApp/.idea/dictionaries
+xoApp/.idea/libraries
+xoApp/.idea/caches
 
 # Keystore files
 # Uncomment the following line if you do not want to check your keystore files in.
