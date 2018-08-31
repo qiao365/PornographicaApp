@@ -2,6 +2,7 @@ package Requests;
 
 import com.google.gson.JsonObject;
 
+import consts.RequestConst;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -15,8 +16,9 @@ import retrofit2.http.POST;
 public interface LoginRequest {
     @Headers({"Accept:application/json",
             "Content-Type:application/x-www-form-urlencoded;charset=utf-8",
-            "Authorization:Basic cHJvbW9zZXJ2ZXI6ZTYxOTcyMDViYTZmOWM2"})
-    @POST("/promo/token")
+            "Authorization:Basic cWluZ3lpc2U6Z1gxZkJhdDNiVg=="})
+
+    @POST(RequestConst.loginRequest)
     @FormUrlEncoded
-    Call<JsonObject> getCall2(@Field("grant_type") String grant_type, @Field("username")String username, @Field("password") String password);
+    Call<JsonObject> getLoginCall(@Field("grant_type") String grant_type, @Field("username")String username, @Field("password") String password,@Field("captcha")String captcha);
 }

@@ -9,12 +9,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class RequestUtil {
-   public static Type PostRequest(final Class<Type> requestInterface) {
+   public static <T>T addRequest(final Class<T> requestInterface) {
        Retrofit retrofit = new Retrofit.Builder()
                .baseUrl(RequestConst.httpHost) // 设置 网络请求 Url
-               .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
+               .addConverterFactory(GsonConverterFactory.create())
                .build();
-       Type request = retrofit.create(requestInterface);
+       T request = retrofit.create(requestInterface);
        return request;
    }
 }

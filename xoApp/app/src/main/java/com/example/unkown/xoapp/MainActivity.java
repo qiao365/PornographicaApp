@@ -77,8 +77,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        Intent intent = new Intent(this,LoginActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this,LoginActivity.class);
+        startActivity(intent);
         Toolbar toolbar = (Toolbar) findViewById(R.id.ToolBar);
         toolbar.setTitle("");
         this.nav_textView = (TextView) findViewById(R.id.toolbar_title);
